@@ -67,5 +67,32 @@ x<sup>(3)</sup><sub>2</sub> = 8836
 μ<sub>2</sub> = (x<sup>(1)</sup><sub>2</sub> + x<sup>(2)</sup><sub>2</sub> + x<sup>(3)</sup><sub>2</sub> + x<sup>(4)</sup><sub>2</sub>)/4 = (7921+5148+8836+4761)/4 = 6675,5  
 s<sub>2</sub> = 8836 - 4761 = 4075  
 
-=> Normalized của x<sup>(3)</sup><sub>2</sub> = ( 8836 - 6675,5 ) / 4075 = 0,53 
+=> Normalized của x<sup>(3)</sup><sub>2</sub> = ( 8836 - 6675,5 ) / 4075 = 0,53  
 
+
+Learning rate:  
+
+![alt text](/img/lesson2_002.JPG "Tổng quát")
+Trong công thức trên α chính là learning rate.  
+Nếu α quá nhỏ, sẽ dẫn đến hội tụ chậm.  
+Nếu α quá lớn, J(θ) có thể không giảm mỗi vòng lặp và có thể không hội tụ.  
+
+
+4. Features and Polynomial Regression  
+Có thể cải thiện feature và hàm giả định bằng 2 cách khác.  
+
+* Gộp nhiều features thành một.  
+Thay vì sử dụng x<sub>1</sub> (mặt tiền), x<sub>2</sub>(chiều sâu) thì thay bằng feature mới x<sub>3</sub>(diện tích).  
+ví dụ:  
+h<sub>θ</sub>=θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub> + θ<sub>2</sub>x<sub>2</sub>  
+=>  
+h<sub>θ</sub>=θ<sub>0</sub> + θ<sub>1</sub>x<sub>3</sub>  
+
+* Thay đổi hàm giả định từ đường thẳng thành đường cong bằng hàm bậc 2,3 hoặc căn...  
+h<sub>θ</sub>=θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub> + θ<sub>2</sub>x<sub>2</sub>  
+=>
+h<sub>θ</sub>=θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub> + θ<sub>2</sub>x<sub>1</sub><sup>2</sup>  
+
+Lưu ý đối với cách biến đổi này thì việc feature scaling là rất quan trọng.  
+
+<tobe continous...>
