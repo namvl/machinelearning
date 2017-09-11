@@ -47,7 +47,7 @@ Feature scaling chia input theo phạm vi của dữ liệu(ví dụ: lấy giá
 
 Mean value (μ<sub>i</sub>) là giá trị trung bình của các input variables.  
 Implement 2 kỹ thuật trên bằng công thức toán học sau:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>i</sub>-μ<sub>i</sub>  
-x<sub>i</sub>:=_______  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s<sub>i</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>i</sub>-μ<sub>i</sub>  
+x<sub>i</sub>:=――――――  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s<sub>i</sub>  
  
