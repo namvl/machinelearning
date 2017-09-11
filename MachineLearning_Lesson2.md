@@ -17,7 +17,7 @@ Trong đó θ<sub>0</sub> giá nhà cơ bản, θ<sub>1</sub>giá nhà trên 1m<
 
 h<sub>θ</sub>(x) = θ * X  
 
-X = [x<sub>0</sub>; x<sub>1</sub>; ..., x<sub>n</sub>]  
+X = [x<sub>0</sub>; x<sub>1</sub>; ...; x<sub>n</sub>]  
 θ = [θ<sub>0</sub>, θ<sub>1</sub>, ..., θ<sub>n</sub>]  
 
 * x<sup>(i)</sup><sub>0</sub>=1  
