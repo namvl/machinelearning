@@ -52,12 +52,19 @@ x<sub>i</sub>:=―――
 μ<sub>i</sub>　là trung bình giá trị của feature i.  
 s<sub>i</sub> là khoảng chênh lệch giữa giá trị lớn nhất và nhỏ nhất của feature i.  
 
-ví dụ: 
-
+ví dụ:  
+Cho test data như dưới  
 | midterm exam | (midterm exam)<sup>2</sup> | Final exam |
 |-|-|-|
 |89|7921|96|
 |72|5148|74|
 |94|8836|87|
 |69|4761|78|
+
+Tính Normalied x<sup>3</sup><sub>2</sup>  
+x<sup>3</sup><sub>2</sup> = 8836
+μ<sub>2</sub> = (x<sup>1</sup><sub>2</sup> + x<sup>2</sup><sub>2</sup> + x<sup>3</sup><sub>2</sup> + x<sup>4</sup><sub>2</sup>)/4 = (7921+5148+8836+4761)/4 = 6675,5  
+s<sub>2</sub> = 8836 - 4761 = 4075  
+
+=> Normalized của x<sup>3</sup><sub>2</sup> = ( 8836 - 6675,5 ) / 4075 = 0,53 
 
