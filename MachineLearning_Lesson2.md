@@ -33,8 +33,9 @@ n=số lượng features
 Trong bài toán quy hồi tuyến tính với 1 biến (linear regression with one variable) chúng ta chỉ có tính toán với θ<sub>0</sub> và θ<sub>1</sub>.
 Trong bài toán này chúng ta sẽ tính với θ<sub>0</sub> cho đến θ<sub>n</sub>.
 
-\begin{align*} & \text{repeat until convergence:} \; \lbrace \newline \; & \theta_0 := \theta_0 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_0^{(i)}\newline \; & \theta_1 := \theta_1 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_1^{(i)} \newline \; & \theta_2 := \theta_2 - \alpha \frac{1}{m} \sum\limits_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)}) \cdot x_2^{(i)} \newline & \cdots \newline \rbrace \end{align*}
+![alt text](/img/lesson2_001.JPG "~~")
 
-
+Đơn giản hóa thành
+![alt text](/img/lesson2_002.JPG "Tổng quát")
 
 
