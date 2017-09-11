@@ -21,11 +21,11 @@ Ta thêm x₀ = 1 vào phương trình để dễ xử lý.
 Hàm số sẽ trở thành:
 h(xᵢ) = θ₀x₀　+　θ₁xᵢ ( <=> [x₀, x₁, ..., xₘ] + [θ₀,θ₁] )
 
-để h(x) gần y nhất thì chính là việc tính cost nhỏ nhất. 
-Ta đặt cost function J(θ)
-------------------m 
-    J(θ) = 1/2m * Σ  (hθ(xᵢ)-yᵢ)²
-------------------i=1
+để h(x) gần y nhất thì chính là việc tính cost nhỏ nhất.  
+Ta đặt cost function J(θ)  
+------------------m  
+    J(θ) = 1/2m * Σ  (hθ(xᵢ)-yᵢ)²  
+------------------i=1  
 
 Để tìm ra theta thích hợp trong bài toán trên thì ta dùng thuật toán Gradient Descent.
 Thuật toán này thực hiện như sau:
