@@ -44,10 +44,20 @@ Khi triển khai bài toán, có thể chúng ta nhận được những dữ li
 
 Chúng ta sẽ sử dụng 2 kỹ thuật là Feature scaling và mean normalization để chuẩn hóa dữ liệu.
 Feature scaling chia input theo phạm vi của dữ liệu(ví dụ: lấy giá trị lớn nhất trừ đi giá trị nhỏ nhất), kết quả sẽ nằm trong khoảng mới giá trị là 1.  
-
-Mean value (μ<sub>i</sub>) là giá trị trung bình của các input variables.  
+Mean value (μ) là giá trị trung bình của các input variables.  
 Implement 2 kỹ thuật trên bằng công thức toán học sau:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>i</sub>-μ<sub>i</sub>  
-x<sub>i</sub>:=――――――  
+x<sub>i</sub>:=―――  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s<sub>i</sub>  
- 
+μ<sub>i</sub>　là trung bình giá trị của feature i.  
+s<sub>i</sub> là khoảng chênh lệch giữa giá trị lớn nhất và nhỏ nhất của feature i.  
+
+ví dụ: 
+
+| midterm exam | (midterm exam)<sup>2</sup> | Final exam |
+|-|-|-|
+|89|7921|96|
+|72|5148|74|
+|94|8836|87|
+|69|4761|78|
+
