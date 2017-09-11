@@ -63,7 +63,7 @@ Cho test data như dưới
 |69|4761|78|
 
 Tính Normalied x<sup>(3)</sup><sub>2</sub>  
-x<sup>(3)</sup><sub>2</sub> = 8836
+x<sup>(3)</sup><sub>2</sub> = 8836  
 μ<sub>2</sub> = (x<sup>(1)</sup><sub>2</sub> + x<sup>(2)</sup><sub>2</sub> + x<sup>(3)</sup><sub>2</sub> + x<sup>(4)</sup><sub>2</sub>)/4 = (7921+5148+8836+4761)/4 = 6675,5  
 s<sub>2</sub> = 8836 - 4761 = 4075  
 
