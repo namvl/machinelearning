@@ -39,13 +39,15 @@ Trong bài toán này chúng ta sẽ tính với θ<sub>0</sub> cho đến θ<su
 ![alt text](/img/lesson2_002.JPG "Tổng quát")
 
 3. Gradient Descent in Practice - Feature Scaling, Learning rate  
+
 Khi triển khai bài toán, có thể chúng ta nhận được những dữ liệu dùng để train có sự sai lệch lớn, một feature có giá trị từ 0 đến 1, một feature khác lại từ 100 đến 10000 chẳng hạn. Trong trường hợp đó cần phải chuẩn hóa lại dữ liệu.  
 
 Chúng ta sẽ sử dụng 2 kỹ thuật là Feature scaling và mean normalization để chuẩn hóa dữ liệu.
 Feature scaling chia input theo phạm vi của dữ liệu(ví dụ: lấy giá trị lớn nhất trừ đi giá trị nhỏ nhất), kết quả sẽ nằm trong khoảng mới giá trị là 1.  
+
 Mean value (μ<sub>i</sub>) là giá trị trung bình của các input variables.  
 Implement 2 kỹ thuật trên bằng công thức toán học sau:  
-        x<sub>i</sub>-μ<sub>i</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x<sub>i</sub>-μ<sub>i</sub>  
 x<sub>i</sub>:=_______  
-           s<sub>i</sub>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s<sub>i</sub>  
  
