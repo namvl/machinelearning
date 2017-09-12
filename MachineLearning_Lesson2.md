@@ -118,7 +118,7 @@ m = 4
 
 Colons can be used to align columns.
 
-| | Diện tích | Số phòng | Số tầng | Tuổi nhà | Giá |
+
 | Tables        | Are           | Cool  | Cool  | Cool  | Cool  |
 | ------------- |:-------------:| -----:|       |       |       |
 | col 3 is      | right-aligned | $1600 |       |       |       |
