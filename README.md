@@ -14,5 +14,5 @@ email: namvl@hotmail.com
 
 ### Other:  
 * Ngoài bài viết sẽ có code sample để dễ tìm hiểu hơn. Source code đặt tại thư mục [src](/src).  
-* Source code được viết chạy trên Octave (4.2.1) và có thể chạy được trên MATHLAB (chưa thử).  
+* Source code được viết chạy trên Octave (4.2.1) và có thể chạy được trên MATLAB (chưa thử).  
 * Octave có phiên bản chạy trên Windows, Linux và Mac OS. Tải ở link sau [https://www.gnu.org/software/octave/download.html](https://www.gnu.org/software/octave/download.html).  
