@@ -104,6 +104,25 @@ Sau đó chọn θ sao cho J(θ) nhỏ nhất trong tập nghiệm thu được.
 Công thức của "Normal equation":  
 θ = (X<sup>T</sup>X)<sup>-1</sup>X<sup>T</sup>y  
 
+So sánh giữa gradient descent và normal equation:
+
+| Gradient Descent        | Normal Equation          |
+| ----------------------- | ------------------------ |
+| Phải chọn alpha         | không cần chọn alpha     |
+| Phải lặp nhiều lần      | Không cần                |
+| O (kn2)                 |O (n<sup>3</sup>), cần tính inverse của X<sup>T</sup>X |
+| Hoạt động tốt với n lớn | Xử lý chậm nếu n rất lớn |
+
+Normal Equation Noninvertibility
+
+Khi triển khai normal equation trên octave chúng ta thường dùng 'pinv' function hơn là 'inv.' Hàm 'pinv' sẽ cho chúng ta giá trị của θ khi mà X<sup>T</sup>X không thể inverse.  
+
+Nguyên nhân khiến X<sup>T</sup>X không thể inverse:  
+
+Dư thừa features, khi mà 2 features có mối liên quan chặt chẽ.
+Có quá nhiều features (e.g. m ≤ n). 
+Trong trường hợp này, xóa vài features hoặc sử dụng "regularization" (sẽ giải thích ở bái sau).  
+
 Ví dụ:  
 m = 4  
 Training data:
@@ -115,14 +134,15 @@ Training data:
 | 1 | 1534 | 3 | 2 | 30 | 315 |
 | 1 | 825  | 2 | 1 | 36 | 178 |
 
----
-<div style="border-left: solid 1px #000; border-right: solid 1px #000; padding: 3px; width: 135px; " >
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1 2104 5 1 45</br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1 1416 3 2 40</br>
- X = |&nbsp;1 1534 3 2 30</br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;1 825&nbsp;&nbsp;&nbsp;2 1 36</br>
-</div>
 
+X = [1, 2104, 5, 1, 45;  
+     1, 1416, 3, 2, 40;  
+     1, 1534, 3, 2, 30;  
+     1, 825 , 2, 1, 36]  
 
+y= [460; 323; 315; 178 ]  
+θ = (X<sup>T</sup>X)<sup>-1</sup>X<sup>T</sup>y  
+Đưa input X và y ở trên vào Octave, rồi áp dụng công thức, thì tính được theta như bên dưới  
+θ = pinv(X'*X)*X'*y  
+θ = [-105.82911; 0.14432; 24.96155; 24.73191; 2.50300]  
 
-<tobe continous...>
