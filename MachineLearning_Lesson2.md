@@ -120,7 +120,6 @@ Colons can be used to align columns.
 
 | | Diện tích | Số phòng | Số tầng | Tuổi nhà | Giá |
 | x<sub>0</sub> | x<sub>1</sub> | x<sub>2</sub> | x<sub>3</sub> | x<sub>4</sub> | y |
-| ------------- |:-------------:| -----:| ----- | ----- | ----- |
 | col 3 is      | right-aligned | $1600 |       |       |       |
 | col 2 is      | centered      |   $12 |       |       |       |
 | zebra stripes | are neat      |    $1 |       |       |       |
