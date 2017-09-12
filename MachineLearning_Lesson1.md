@@ -11,29 +11,32 @@ Giá tiền = Đơn giá * Diện tích
 Thật đơn giản phải không? Nhưng đời không như là mơ, mỗi căn nhà lại có đơn giá trên diện tích khác nhau.Như vậy phải dự toán làm sao để gần đúng nhất.Giá nhà dự đoán sẽ là một hàm số bậc nhất với diện tích.
 Trong dữ liệu về nhà có sẵn (dùng để training), với diện tích xᵢ thì giá nhà sẽ là yᵢ. i chạy từ 1 đến m ( 1<= i <= m ).
 
-Giả định hàm số cần tìm là hθ(ｘ) = θ₀　+　θ₁x
+Giả định hàm số cần tìm là h<sub>θ</sub>(x) = θ₀　+　θ₁x
+(θ đọc là theta)
 Và để dự đoán chính xác thì hàm số này phải đi qua hoặc gần với điểm (x,y) trên trục tọa độ.
 tổng quát
-h(xᵢ) = θ₀　+　θ₁xᵢ (i là số nguyên dương 1<= i <= m )
+h<sub>θ</sub>(xᵢ) = θ₀　+　θ₁xᵢ (i là số nguyên dương 1<= i <= m )
 cần tìm θ₀　+　θ₁ sao cho khi thay thế xᵢ thì giá trị hàm số gần yᵢ nhất
 
 Ta thêm x₀ = 1 vào phương trình để dễ xử lý.
 Hàm số sẽ trở thành:
-h(xᵢ) = θ₀x₀　+　θ₁xᵢ ( <=> [x₀, x₁, ..., xₘ] + [θ₀,θ₁] )
+h<sub>θ</sub>(xᵢ) = θ₀x₀　+　θ₁xᵢ ( <=> [x₀, x₁, ..., xₘ] + [θ₀,θ₁] )
 
 để h(x) gần y nhất thì chính là việc tính cost nhỏ nhất.  
 Ta đặt cost function J(θ)  
 ---------------m  
-J(θ) = 1/2m * Σ  (hθ(xᵢ)-yᵢ)²  
+J(θ) = 1/2m * Σ  (h<sub>θ</sub>(xᵢ)-yᵢ)²  
 ---------------i=1  
 
-Để tìm ra theta thích hợp trong bài toán trên thì ta dùng thuật toán Gradient Descent.
+Để tìm ra θ thích hợp trong bài toán trên thì ta dùng thuật toán Gradient Descent.
 Thuật toán này thực hiện như sau:
-1. Chọn một điểm bắt đầu của theta (θ₀) 
+1. Chọn một điểm bắt đầu của θ 
     θ = θ₀
-2. Thay đổi giá trị của theta(θ) đến khi giá trị của J(θ) là đủ nhỏ và theta không đổi 
-    mỗi một lần thay đổi giá trị của theta sẽ giảm α*(d/dθʲ)J(θ)
-    (α được gọi là learning rate)
+2. Thay đổi giá trị của θ đến khi giá trị của J(θ) là đủ nhỏ và θ không đổi 
+    mỗi một lần thay đổi giá trị của θ sẽ giảm α*(∂/∂θ<sub>j</sub>)J(θ)  
+    (α được gọi là learning rate)  
+	∂ là Partial derivative (đạo hàm riêng)  
 
-Ở đây cần giới hạn số lần thay đổi thích hợp để tính ra được theta tương đối hợp lý.
+Ở đây cần giới hạn số lần thay đổi thích hợp để tính ra được θ tương đối hợp lý.
 Số lần lặp (iterator) và α được chỉ định. Ở mức cơ bản này thì cần chạy thử để dự đoán được iterator và learning rate hợp lý.
+Cụ thể chi tiết hơn mời xem bài 2.  
