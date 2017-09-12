@@ -95,4 +95,26 @@ h<sub>θ</sub>=θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub> + θ<sub>2</sub>x<su
 
 Lưu ý đối với cách biến đổi này thì việc feature scaling là rất quan trọng.  
 
+5. Normal equation  
+Quay lại bài toán tìm cực tiểu của cost function.  
+Để tìm điểm cực đại và cực tiểu của hàm số ta cần tìm đạo hàm của hàm số. Về mặt lý thuyết, ta đi tìm đạo hàm của J(θ), tìm tất cả những giá trị θ là nghiệm của phương trình:
+J'(θ) = 0  
+(J'(θ) là đạo hàm của hàm số J(θ)).  
+Sau đó chọn θ sao cho J(θ) nhỏ nhất trong tập nghiệm thu được. Phương pháp này còn được gọi là “Normal Equation”.  
+Công thức của "Normal equation":  
+θ = (X<sup>T</sup>X)<sup>-1</sup>X<sup>T</sup>y  
+
+Ví dụ:  
+m = 4  
+ |Diện tích|Số phòng|Số tầng|Tuổi nhà|Giá
+x<sub>0</sub>|x<sub>1</sub>|x<sub>2</sub>|x<sub>3</sub>|x<sub>4</sub>|y
+1|2104|5|1|45|460
+1|1416|3|2|40|323
+1|1534|3|2|30|315
+1|825|2|1|36|178
+
+
+
+
+
 <tobe continous...>
