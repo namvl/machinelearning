@@ -106,24 +106,14 @@ Công thức của "Normal equation":
 
 Ví dụ:  
 m = 4  
+Training data:
 
-| | Diện tích | Số phòng | Số tầng | Tuổi nhà | Giá |
-| x<sub>0</sub> | x<sub>1</sub> | x<sub>2</sub> | x<sub>3</sub> | x<sub>4</sub> | y |
+| x<sub>0</sub> | Diện tích<br>x<sub>1</sub> | Số phòng<br>x<sub>2</sub> | Số tầng<br>x<sub>3</sub> | Tuổi nhà<br>x<sub>4</sub> | Giá<br>y |
 | --- | --- | --- | --- | --- | ---: |
 | 1 | 2104 | 5 | 1 | 45 | 460 |
 | 1 | 1416 | 3 | 2 | 40 | 323 |
 | 1 | 1534 | 3 | 2 | 30 | 315 |
 | 1 | 825  | 2| 1 | 36 | 178 |
-
-
-Colons can be used to align columns.
-
-| 0             | Diện tích     | Số phòng      | Số tầng       | Tuổi nhà      | Giá |
-| x<sub>0</sub> | x<sub>1</sub> | x<sub>2</sub> | x<sub>3</sub> | x<sub>4</sub> | y   |
-| col 3 is      | right-aligned | $1600         |   a           | c             | b   |
-| col 2 is      | centered      |   $12         |   a           | c             | b   |
-| zebra stripes | are neat      |    $1         |   a           | c             | b   |
-
 
 
 
