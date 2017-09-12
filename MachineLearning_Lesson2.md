@@ -109,13 +109,20 @@ m = 4
 Training data:
 
 | x<sub>0</sub> | Diện tích<br>x<sub>1</sub> | Số phòng<br>x<sub>2</sub> | Số tầng<br>x<sub>3</sub> | Tuổi nhà<br>x<sub>4</sub> | Giá<br>y |
-| --- | --- | --- | --- | --- | ---: |
+| :---: | :---: | :---: | :---: | :---: | ---: |
 | 1 | 2104 | 5 | 1 | 45 | 460 |
 | 1 | 1416 | 3 | 2 | 40 | 323 |
 | 1 | 1534 | 3 | 2 | 30 | 315 |
-| 1 | 825  | 2| 1 | 36 | 178 |
+| 1 | 825  | 2 | 1 | 36 | 178 |
 
-
+---
+<div style="border-left: solid 1px #000; border-right: solid 1px #000; padding: 3px; width: 135px; " >
+    &nbsp;1 2104 5 1 45</br>
+    &nbsp;1 1416 3 2 40</br>
+    &nbsp;1 1534 3 2 30</br>
+    &nbsp;1 825&nbsp;&nbsp;2 1 36
+    </br>
+</div>
 
 
 
