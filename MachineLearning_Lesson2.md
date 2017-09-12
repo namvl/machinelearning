@@ -106,6 +106,7 @@ Công thức của "Normal equation":
 
 Ví dụ:  
 m = 4  
+
 | |Diện tích|Số phòng|Số tầng|Tuổi nhà|Giá|
 |x<sub>0</sub>|x<sub>1</sub>|x<sub>2</sub>|x<sub>3</sub>|x<sub>4</sub>|y|
 |---|---|---|---|---|---:|
